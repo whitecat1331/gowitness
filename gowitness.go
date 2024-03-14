@@ -9,7 +9,7 @@ import (
 //go:embed web/assets/* web/ui-templates/* web/static-templates/*
 var assets embed.FS
 
-func gowitness() {
+func GoWitness() {
 	cmd.Embedded = assets
 	cmd.Execute()
 }
