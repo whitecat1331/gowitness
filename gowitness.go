@@ -1,4 +1,4 @@
-package main
+package gowitness
 
 import (
 	"embed"
@@ -9,7 +9,7 @@ import (
 //go:embed web/assets/* web/ui-templates/* web/static-templates/*
 var assets embed.FS
 
-func main() {
+func gowitness() {
 	cmd.Embedded = assets
 	cmd.Execute()
 }
